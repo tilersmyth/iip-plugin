@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+
+        window.IIP_SDK = window.IIP_SDK || {
+            onReady: function () {
+                IIP_SDK.init({
+                    appId: "61865c70-32f2-11e8-a833-c1bc905cf134",
+                    text: "Invest in press, invest in community!!",
+                    credit: {
+                        id: 0,
+                        type: "main"
+                    }
+                });
+            }
+        };
+
+        (function (d, s, t) {
+            var js, tjs = d.getElementsByTagName(s)[0];
+
+            if (d.getElementById(t)) return;
+            js = d.createElement(s); js.t = t;
+            js.src = "dist/bundle.js";
+            tjs.parentNode.insertBefore(js, tjs);
+
+        })(document, 'script', 'unique-tag');
+
+
+    </script>
+
+</head>
+
+<body style="background-color: #ccc">
+
+    <button onclick="IIP_SDK.openMenu('Hey all, I hope you enjoyed the article! After months of investigative journalism I am happy with the final result.', 'Terry H.', 'http://localhost:3000/logo.png')"
+        style="margin-left: 500px">Open Menu</button>
+
+</body>
+
+</html>

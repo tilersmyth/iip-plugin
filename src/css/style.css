@@ -1,0 +1,7 @@
+iframe#iip_menu_frame {
+  display: none;
+}
+
+html.iip_slideout_active {
+  overflow-x: hidden;
+}
